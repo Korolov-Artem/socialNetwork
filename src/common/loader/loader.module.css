@@ -1,0 +1,7 @@
+.loader {
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 59%;
+    height: 78%;
+    z-index: 1000;
+  }
