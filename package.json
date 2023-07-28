@@ -2,7 +2,7 @@
   "name": "react-way-of-samurai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://korolov-artem.github.io/socialNetwork-demo",
+  "homepage": "https://korolov-artem.github.io/socialNetwork",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^18.2.0",
