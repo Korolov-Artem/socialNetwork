@@ -2,6 +2,7 @@ import React from "react";
 import s from "./ProfileInfo.module.css";
 import Loader from "../../../common/loader/loader";
 import ProfileStatusWithHooks from "../Status/ProfileStatusWithHooks";
+import userPhoto from "../../../assets/images/user.png";
 
 
 const ProfileInfo = (props) => {
@@ -13,7 +14,8 @@ const ProfileInfo = (props) => {
     <div>
       <div className={s.descriptionBlock}>
         <div>
-          <img src={props.profile.photos.large} />
+          <img src={props.profile.photos.large || userPhoto} />
+          {props.owner && <input type={"file"}/>}
           <ProfileStatusWithHooks updateStatus={props.updateStatus } status={props.status}/>
         </div>
         <p>{props.profile.fullName}</p>
